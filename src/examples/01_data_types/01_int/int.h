@@ -4,3 +4,5 @@
 void use_int_data_type();
 
 void reassign_int_data_type();
+
+int echo_variable(int num);
