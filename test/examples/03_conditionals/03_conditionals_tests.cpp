@@ -4,3 +4,19 @@
 TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
+
+TEST_CASE("Test AND truth table")
+{
+	REQUIRE((true and true) == true);
+	REQUIRE((true && false) == false);
+	REQUIRE((false and true) == false);
+	REQUIRE((false && false) == false);
+}
+
+TEST_CASE("Test OR truth table")
+{
+	REQUIRE((true or true) == true);
+	REQUIRE((true || false) == true);
+	REQUIRE((false or true) == true);
+	REQUIRE((false || false) == false);
+}
