@@ -17,10 +17,10 @@ int main()
     cout<<"Enter num3: ";
     cin>>num3;
 
-    auto result = operator_precendence_1(num1, num2, num3);
+    auto result = operator_precedence_1(num1, num2, num3);
     cout<<"Result op prec 1: "<<result<<"\n";
 
-    auto result = operator_precendence_2(num1, num2, num3);
+    auto result = operator_precedence_2(num1, num2, num3);
     cout<<"Result op prec 2: "<<result<<"\n";
     
     return 0;
