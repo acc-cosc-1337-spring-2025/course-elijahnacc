@@ -50,3 +50,19 @@ TEST_CASE("Test is vowel")
 	REQUIRE(is_vowel('y') == false);
 	REQUIRE(is_vowel('z') == false);
 }
+
+TEST_CASE("Test is consonant")
+{
+	REQUIRE(is_consonant('a') == false);
+	REQUIRE(is_consonant('e') == false);
+	REQUIRE(is_consonant('i') == false);
+	REQUIRE(is_consonant('o') == false);
+	REQUIRE(is_consonant('u') == false);
+
+	REQUIRE(is_consonant('b') == true);
+	REQUIRE(is_consonant('c') == true);
+	REQUIRE(is_consonant('d') == true);
+	REQUIRE(is_consonant('x') == true);
+	REQUIRE(is_consonant('y') == true);
+	REQUIRE(is_consonant('z') == true);
+}

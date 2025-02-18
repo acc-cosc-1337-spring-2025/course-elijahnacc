@@ -21,3 +21,8 @@ bool is_vowel(char letter)
 {
     return letter == 'a' or letter == 'e' or letter == 'i' or letter == 'o' or letter == 'u';
 }
+
+bool is_consonant(char letter)
+{
+    return not is_vowel(letter);
+}
