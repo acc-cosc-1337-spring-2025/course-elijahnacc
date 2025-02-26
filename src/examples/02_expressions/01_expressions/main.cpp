@@ -20,7 +20,7 @@ int main()
     auto result = operator_precedence_1(num1, num2, num3);
     cout<<"Result op prec 1: "<<result<<"\n";
 
-    auto result = operator_precedence_2(num1, num2, num3);
+    result = operator_precedence_2(num1, num2, num3);
     cout<<"Result op prec 2: "<<result<<"\n";
     
     return 0;
