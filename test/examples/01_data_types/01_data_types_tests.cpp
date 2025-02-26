@@ -11,7 +11,7 @@ TEST_CASE("Test echo variable")
 {
 	REQUIRE(echo_variable(5) == 5);
 	REQUIRE(echo_variable(10) == 10);
-	REQUIRE(echo_variable(100) == 10);
+	REQUIRE(echo_variable(100) == 100);
 }
 
 TEST_CASE("Test subtract numbers")
