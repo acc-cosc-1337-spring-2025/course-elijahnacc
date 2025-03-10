@@ -43,7 +43,7 @@ string reverse_string(string dna){
     int string_length = dna.size();
     string reverse;
 
-    for (int i = string_length; i >= 0; --i)
+    for (int i = string_length -1; i >= 0; --i)
         reverse += dna[i];
     
     return reverse;
