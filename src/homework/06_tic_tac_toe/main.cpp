@@ -1,13 +1,15 @@
 #include "tic_tac_toe.h"
+#include "tic_tac_toe_manager.h"
 
 using std::cout; using std::cin; using std::string;
 
 int main() 
 {
 	TicTacToe game;
+	TicTacToeManager manager;
 	string first_player;
 	char choice = 'Y';
-	int position;
+	int position, X, O, T;
 	
 	do {
 
@@ -40,6 +42,15 @@ int main()
 		{
 			cout << "Result: " << game.get_winner() << " wins!\n";
 		}
+
+		manager.save_game(game);
+		manager.get_winner_totals(X, O, T);
+
+		cout << "\n";
+		cout << "X wins: " << X << "\n";
+		cout << "O wins: " << O << "\n";
+		cout << "Ties: " << T << "\n";
+		cout << "\n";
 
 		cout << "Play again? (y/n): ";
 		cin >> choice;
